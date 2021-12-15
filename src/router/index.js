@@ -2,8 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Karteikarten from '../views/Karteikarten.vue'
-import Persons from '../views/Persons.vue'
-
 const routes = [
   {
     path: '/',
@@ -19,12 +17,8 @@ const routes = [
     path: '/karteikarten',
     name: 'Karteikarten',
     component: Karteikarten
-  },
-  {
-    path: '/persons',
-    name: 'Persons',
-    component: Persons
   }
+
 ]
 
 const router = createRouter({
