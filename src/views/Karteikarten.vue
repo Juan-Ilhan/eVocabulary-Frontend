@@ -1,16 +1,32 @@
 <template>
 <h1>Deine Karteikarten</h1>
   <div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Home</h5>
-      <p class="card-text">Haus</p>
+    <div class="card" v-for="Karteikarten in Karteikarten" ;key='card.id'>
+          <div class="card-body">
+            <h5 class="card-title">englishWord</h5>
+            <p class="card-text">germanWord</p>
+          </div>
     </div>
-  </div>
-</template>
+   </template>
+
 
 <script>
 export default {
-  name: 'Karteikarten'
+  name: 'Karteikarten',
+  data () {
+    return {
+      cards: {
+    {
+      id: 1,
+        englishWord: 'House',
+      germanWord: 'Haus',
+    }
+      }
+    }
+  }
+
+
+
 }
 </script>
 
