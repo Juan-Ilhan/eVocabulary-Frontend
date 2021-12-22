@@ -1,5 +1,6 @@
 <template>
   <h1>Deine Karteikarten</h1>
+  <v-for> </v-for>
   <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
    <div class="card-header">{{kartei.englishWord}}</div>
     <div class="card-body">
@@ -13,20 +14,7 @@ export default {
   name: 'Kartei',
   data () {
     return {
-      kartei: [
-        {
-          id: 1,
-          englishWord: 'House',
-          germanWord: 'Haus',
-          definition: 'Gebäude, das Menschen zum Wohnen dient.'
-        },
-        {
-          id: 2,
-          englishWord: 'Stuhl',
-          germanWord: 'Chair',
-          definition: 'Mit vier Beinen, einer Rückenlehne und gelegentlich Armlehnen versehenes Sitzmöbel für eine Person.'
-        }
-      ]
+      karteien: []
     }
   },
   methods: {
@@ -47,7 +35,7 @@ export default {
     fetch(endpoint, requestOptions)
       .then(response => response.json())
       .then(result => result.forEach(kartei => {
-        this.kartei.push(kartei)
+        this.karteien.push(kartei)
       }))
       .catch(error => console.log('error', error))
   }
