@@ -31,10 +31,10 @@ export default {
   },
   methods: {
     getKartei (kartei) {
-      if (kartei.id === 1) {
-        return 1
-      } else if (kartei.id === 2) {
-        return 2
+      if (kartei.englishWord === 'House') {
+        return kartei
+      } else if (kartei.englishWord === 'Chair') {
+        return kartei
       }
     }
   },
