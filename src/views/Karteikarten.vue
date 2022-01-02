@@ -8,6 +8,7 @@
       <p class="card-text">{{kartei.definition}}</p>
     </div>
   </div>
+  </div>
 </template>
 <script>
 export default {
