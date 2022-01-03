@@ -1,6 +1,6 @@
 <template>
   <h1>Deine Karteikarten</h1>
-  <div class="col" v-for="kartei in karteien" :key="Karteikarten.id">
+  <div class="col" v-for="kartei in karteien" :key="kartei.id">
   <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
    <div class="card-header">{{kartei.englishWord}}</div>
     <div class="card-body">
