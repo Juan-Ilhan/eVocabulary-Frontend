@@ -5,16 +5,18 @@
       <div class="card-body">
         <h5 class="card-title">{{kartei.germanWord}}</h5>
         <p class="card-text">{{kartei.definition}}</p>
-        <button type="button" class="btn btn-warning btn-circle"><i class="glyphicon glyphicon-remove"></i></button>
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
+// eslint-disable-next-line no-unused-vars
+import Kartei from '@/views/Karteikarten'
 export default {
   name: 'KarteikarteList',
+  components: {
+  },
   props: {
     karteien: {
       type: Array,

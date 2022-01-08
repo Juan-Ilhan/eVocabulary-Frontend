@@ -4,14 +4,10 @@
     <div class="row align-items-start">
       <div class="col">
         <karteikarte-list :karteien="this.karteien"></karteikarte-list>
-      </div>
-      <div class="col">
-      </div>
-      <div class="col">
+   <KarteikartenCreateForm></KarteikartenCreateForm>
       </div>
     </div>
   </div>
-   <KarteikartenCreateForm></KarteikartenCreateForm>
 </template>
 
 <script>
