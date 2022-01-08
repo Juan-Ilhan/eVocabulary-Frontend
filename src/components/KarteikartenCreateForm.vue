@@ -20,6 +20,7 @@
       <input type="text" class="form-control" id="defintion" placeholder="Schreibe die Definition" v-model="definiton">
     </div>
     <button class="btn btn-primary me-3" type="submit" @click="getKartei">Create</button>
+      <button class="btn btn-danger" type="reset">Reset</button>
     </div>;
   </div>
 </template>
