@@ -9,15 +9,15 @@
     <div class="offcanvas-body">
       <div class="mb-3">
         <label for="german-word" class="form-label">German Word</label>
-        <input type="text" class="form-control" id="german-word" placeholder="Schreibe das deutsche Wort" v-model="germanWord">
+        <input type="text" class="form-control" id="german-word" placeholder="Schreibe das deutsche Wort" v-model="germanWord" required>
       </div>
       <div class="mb-3">
         <label for="english-word" class="form-label">English Word</label>
-        <input type="text" class="form-control" id="english-word" placeholder="Schreibe das englische Wort" v-model="englishWord">
+        <input type="text" class="form-control" id="english-word" placeholder="Schreibe das englische Wort" v-model="englishWord" required>
       </div>
       <div class="mb-3">
       <label for="defintion" class="form-label">Definition</label>
-      <input type="text" class="form-control" id="defintion" placeholder="Schreibe die Definition" v-model="definiton">
+      <input type="text" class="form-control" id="defintion" placeholder="Schreibe die Definition" v-model="definition" required>
     </div>
     <button class="btn btn-primary me-3" type="submit" @click="getKartei">Create</button>
       <button class="btn btn-danger" type="reset">Reset</button>
