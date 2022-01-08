@@ -19,7 +19,7 @@
       <label for="defintion" class="form-label">Definition</label>
       <input type="text" class="form-control" id="defintion" placeholder="Schreibe die Definition" v-model="definition" required>
     </div>
-    <button class="btn btn-primary me-3" type="submit" @click="getKartei">Create</button>
+    <button class="btn btn-primary me-3" type="submit" @click.prevent="createKartei">Create</button>
       <button class="btn btn-danger" type="reset">Reset</button>
     </div>;
   </div>
@@ -36,7 +36,7 @@ export default {
     }
   },
   methods: {
-    getKartei () {
+    createKartei () {
       const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/karteikarten'
 
       const myHeaders = new Headers()
