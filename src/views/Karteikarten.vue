@@ -26,13 +26,6 @@ export default {
     }
   },
   methods: {
-    getKartei (kartei) {
-      if (kartei.englishWord === 'House') {
-        return kartei
-      } else if (kartei.englishWord === 'Chair') {
-        return kartei
-      }
-    }
   },
   mounted () {
     const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/karteikarten'

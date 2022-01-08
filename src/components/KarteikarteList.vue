@@ -11,8 +11,6 @@
 </template>
 
 <script>
-// eslint-disable-next-line no-unused-vars
-import Kartei from '@/views/Karteikarten'
 export default {
   name: 'KarteikarteList',
   components: {
@@ -27,13 +25,4 @@ export default {
 </script>
 
 <style scoped>
-.btn-circle {
-  width: 15px;
-  height: 15px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border-radius: 5px;
-}
 </style>

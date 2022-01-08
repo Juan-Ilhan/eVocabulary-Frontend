@@ -10,15 +10,15 @@
     <div class="offcanvas-body">
       <form class="text-start needs-validation">
         <div class="mb-3">
-          <label for="germanword" class="form-label">Deutsches Wort</label>
-          <input type="text" class="form-control" id="germanword" v-model="germanWord" required>
+          <label for="germanWord" class="form-label">Deutsches Wort</label>
+          <input type="text" class="form-control" id="germanWord" v-model="germanWord" required>
           <div class="invalid-feedback">
             Bitte trage ein deutsches Wort ein.
           </div>
         </div>
         <div class="mb-3">
-          <label for="englishword" class="form-label">Englisches Wort</label>
-          <input type="text" class="form-control" id="englishword" v-model="englishWord" required>
+          <label for="englishWord" class="form-label">Englisches Wort</label>
+          <input type="text" class="form-control" id="englishWord" v-model="englishWord" required>
           <div class="invalid-feedback">
             Bitte trage ein englisches Wort ein.
           </div>
