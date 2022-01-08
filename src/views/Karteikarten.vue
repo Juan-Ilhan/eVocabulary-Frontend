@@ -29,6 +29,19 @@ export default {
         return kartei
       }
     }
+  },
+  mounted () {
+    const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/karteikarten'
+    const requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    }
+    fetch(endpoint, requestOptions)
+      .then(response => response.json())
+      .then(result => result.forEach(kartei => {
+        this.karteien.push(kartei)
+      }))
+      .catch(error => console.log('error', error))
   }
 }
 </script>
