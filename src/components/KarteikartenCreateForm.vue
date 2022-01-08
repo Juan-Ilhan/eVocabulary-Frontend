@@ -37,6 +37,10 @@ export default {
   },
   methods: {
     createKartei () {
+      console.log(this.germanWord)
+      console.log(this.englishWord)
+      console.log(this.definition)
+
       const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/karteikarten'
 
       const myHeaders = new Headers()
