@@ -45,7 +45,7 @@ export default {
       const payload = JSON.stringify({
         englishWord: this.englishWord,
         germanWord: this.germanWord,
-        definition: this.definiton
+        definition: this.definition
       })
 
       const requestOptions = {
