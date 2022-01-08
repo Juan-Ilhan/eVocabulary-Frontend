@@ -33,10 +33,7 @@ export default {
       germanWord: '',
       definition: ''
     }
-  }
-}
-</script>
-
+  },
   methods: {
     getKartei () {
       const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/karteikarten'
@@ -62,6 +59,7 @@ export default {
     }
   }
 }
+</script>
 
 <style scoped>
 .sticky-button {
