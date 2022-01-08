@@ -2,15 +2,19 @@
   <h1>Deine Karteikarten</h1>
   <div class ="container-fluid">
     <karteikarte-list :karteien="this.karteien"></karteikarte-list>
-    <Karteikarten-create-form></Karteikarten-create-form>
     </div>
-</template>,
+   <KarteikartenCreateForm></KarteikartenCreateForm>
+</template>
+
 <script>
+import KarteikarteList from '@/components/KarteikarteList'
+import KarteikartenCreateForm from '@/components/KarteikartenCreateForm'
+
 export default {
   name: 'Kartei',
   components: {
     KarteikarteList,
-    KarteikarteCreateForm
+    KarteikartenCreateForm
   },
   data () {
     return {

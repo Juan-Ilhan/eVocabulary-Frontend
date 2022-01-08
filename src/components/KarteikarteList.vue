@@ -14,7 +14,7 @@
 <script>
 export default {
   name: 'KarteikarteList',
-  probs: {
+  props: {
     karteien: {
       type: Array,
       required: true

@@ -1,5 +1,5 @@
 <template>
-  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Erstelle deine Karteikarte</button>
 <i class="bi bi-kartei-plus-fill"></i>
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header">
@@ -9,15 +9,15 @@
     <div class="offcanvas-body">
       <div class="mb-3">
         <label for="german-word" class="form-label">German Word</label>
-        <input type="text" class="form-control" id="german-word" placeholder="Example input placeholder" v-model="germanWord">
+        <input type="text" class="form-control" id="german-word" placeholder="Schreibe das deutsche Wort" v-model="germanWord">
       </div>
       <div class="mb-3">
         <label for="english-word" class="form-label">English Word</label>
-        <input type="text" class="form-control" id="english-word" placeholder="Another input placeholder" v-model="englishWord">
+        <input type="text" class="form-control" id="english-word" placeholder="Schreibe das englische Wort" v-model="englishWord">
       </div>
       <div class="mb-3">
       <label for="defintion" class="form-label">Definition</label>
-      <input type="text" class="form-control" id="defintion" placeholder="Another input placeholder" v-model="definiton">
+      <input type="text" class="form-control" id="defintion" placeholder="Schreibe die Definition" v-model="definiton">
     </div>
     <button class="btn btn-primary me-3" type="submit" @click="getKartei">Create</button>
     </div>;
@@ -25,17 +25,18 @@
 </template>
 
 <script>
-
 export default {
   name: 'KarteikartenCreateForm',
   data () {
     return {
-      germanWord: '',
       englishWord: '',
-      definiton: ''
-
+      germanWord: '',
+      definition: ''
     }
-  },
+  }
+}
+</script>
+
   methods: {
     getKartei () {
       const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/karteikarten'
@@ -61,7 +62,6 @@ export default {
     }
   }
 }
-</script>
 
 <style scoped>
 .sticky-button {
