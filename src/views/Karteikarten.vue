@@ -1,8 +1,6 @@
 <template>
   <h1>Deine Karteikarten</h1>
-  <div class ="container-fluid">
     <karteikarte-list :karteien="this.karteien"></karteikarte-list>
-    </div>
    <KarteikartenCreateForm></KarteikartenCreateForm>
 </template>
 

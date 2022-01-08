@@ -19,9 +19,11 @@
       <label for="defintion" class="form-label">Definition</label>
       <input type="text" class="form-control" id="defintion" placeholder="Schreibe die Definition" v-model="definition" required>
     </div>
+      <div class="mt-5">
     <button class="btn btn-primary me-3" type="submit" @click="createKartei">Create</button>
       <button class="btn btn-danger" type="reset">Reset</button>
-    </div>;
+    </div>
+  </div>
   </div>
 </template>
 
@@ -39,8 +41,8 @@ export default {
     createKartei () {
       const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/karteikarten'
 
-      const myHeaders = new Headers()
-      myHeaders.append('Content-Type', 'application/json')
+      const headers = new Headers()
+      headers.append('Content-Type', 'application/json')
 
       const payload = JSON.stringify({
         englishWord: this.englishWord,
@@ -50,7 +52,7 @@ export default {
 
       const requestOptions = {
         method: 'POST',
-        headers: myHeaders,
+        headers: headers,
         body: payload,
         redirect: 'follow'
       }
