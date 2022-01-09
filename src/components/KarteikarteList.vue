@@ -5,7 +5,7 @@
       <div class="card-body">
         <h5 class="card-title">{{kartei.definition}}</h5>
       <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           Übersetzung
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
