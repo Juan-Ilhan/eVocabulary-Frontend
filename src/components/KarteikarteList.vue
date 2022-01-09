@@ -1,4 +1,5 @@
 <template>
+  <div class="container-fluid">
   <div class="col" v-for="kartei in karteien" :key="kartei.id">
     <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
       <div class="card-header">{{kartei.englishWord}}</div>
@@ -7,6 +8,7 @@
         <p class="card-text">{{kartei.definition}}</p>
       </div>
     </div>
+  </div>
   </div>
 </template>
 

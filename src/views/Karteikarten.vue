@@ -1,6 +1,6 @@
 <template>
   <h1>Deine Karteikarten</h1>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row align-items-start">
       <div class="col">
         <karteikarte-list :karteien="this.karteien"></karteikarte-list>
