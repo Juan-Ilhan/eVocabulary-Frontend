@@ -7,8 +7,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <router-link class="nav-link" to ="/">Home</router-link>
-          <router-link class="nav-link" to ="/about">About</router-link>
+          <router-link class="nav-link" to ="/">Startseite</router-link>
+          <router-link class="nav-link" to ="/about">Über uns</router-link>
           <router-link class="nav-link" to ="/karteikarten">Karteikarten</router-link>
         </div>
       </div>
