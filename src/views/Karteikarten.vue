@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <div class="row align-items-start">
       <div class="col">
-      </div>
+        </div>
         <karteikarte-list :karteien="this.karteien"></karteikarte-list>
    <KarteikartenCreateForm></KarteikartenCreateForm>
       </div>
