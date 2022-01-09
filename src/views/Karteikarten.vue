@@ -1,13 +1,13 @@
 <template>
   <h1>Deine Karteikarten</h1>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row align-items-start">
       <div class="col">
         <karteikarte-list :karteien="this.karteien"></karteikarte-list>
    <KarteikartenCreateForm></KarteikartenCreateForm>
       </div>
     </div>
-  </div>
+    </div>
 </template>
 
 <script>
