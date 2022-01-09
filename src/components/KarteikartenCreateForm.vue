@@ -1,6 +1,6 @@
 <template>
   <button class="btn btn-success sticky-button" data-bs-toggle="offcanvas" data-bs-target="#karteien-create-offcanvas" aria-controls="#karteien-create-offcanvas">
-    <i class="bi bi-kartei-plus-fill"></i>
+    <i class="bi bi-kartei-plus-fill">Karteikarte erstellen</i>
   </button>
   <div class="offcanvas offcanvas-end" tabindex="-1" id="karteien-create-offcanvas" aria-labelledby="offcanvas-label">
     <div class="offcanvas-header">
