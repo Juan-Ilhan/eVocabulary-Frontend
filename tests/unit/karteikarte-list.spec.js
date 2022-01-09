@@ -2,8 +2,8 @@ import { mount } from '@vue/test-utils'
 import KarteikarteList from '@/components/KarteikarteList'
 import Karteikarten from '@/views/Karteikarten'
 
-describe('Testing PersonsCardList.vue', () => {
-  it('should render a person card for each person', () => {
+describe('Testing KarteikarteList.vue', () => {
+  it('should render a kartei card for each kartei', () => {
     // when
     const wrapper = mount(KarteikarteList, {
       propsData: {
