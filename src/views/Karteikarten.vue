@@ -1,11 +1,11 @@
 <template>
   <h1>Deine Karteikarten</h1>
   <div class="container-lg">
-    <div class="row align-items-start">
       <div class="col">
-        </div>
+        <div class="row align-items-start">
         <karteikarte-list :karteien="this.karteien"></karteikarte-list>
    <KarteikartenCreateForm></KarteikartenCreateForm>
+        </div>
       </div>
     </div>
 </template>
